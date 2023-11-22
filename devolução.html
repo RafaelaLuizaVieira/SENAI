@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="devolução.css">
+  <title>Devolução de Livros</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Devolução de Livros</h1>
+    <form id="devolucaoForm">
+      <label for="livro">Selecione o Livro:</label>
+      <select id="livro" name="livro" required>
+        <option value="opcoes">Escolha uma das opções abaixo:</option>
+        <option class="disponivel" value="Romeu e Julieta">Romeu e Julieta</option>
+        <option class="indisponivel" value="pijama" >O Menino do Pijama Listrado-(Indisponível)</option>
+        <option class="disponivel" value="A culpa é das Estrelas">A culpa é das Estrelas</option>
+        <option class="indisponivel" value="hp" >Harry Potter e a Pedra Filosofal-(Indisponível)</option>
+        <option class="disponivel" value="Minha Vida Fora de Série">Minha Vida Fora de Série</option>
+        <option class="disponivel" value="Rainha Vermelha">Rainha Vermelha</option>
+        <option class="disponivel" value="A Cabana">A Cabana</option>
+        <option class="indisponivel" value="pequeno-principe" disabled>O Pequeno Principe-(Indisponível)</option>
+        <option class="indisponivel" value="menino" >O Menino Maluquinho-(Indisponível)</option>
+        <option class="disponivel" value="Diário de um Banana">Diário de um Banana</option>
+        <option class="disponivel" value="Alice no País das Maravilhas">Alice no País das Maravilhas</option>
+        <option class="disponivel" value="As Aventuras de Pinóquio">As Aventuras de Pinóquio</option>
+        <!-- Adicione mais opções conforme necessário -->
+      </select>
+
+      <label for="nome">Seu Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <button type="button" onclick="realizarDevolucao()">Devolver Livro</button>
+    </form>
+  </div>
+
+  <script src="devolução.js"></script>
+</body>
+</html>

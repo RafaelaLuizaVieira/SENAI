@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo de Livros</title>
+    <link rel="stylesheet" href="emprestimos.css">
+    <script src="/emprestimos.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Empréstimo de Livros</h1>
+        
+        <div class="form">
+            <label for="livro">Livros:</label>
+            
+            <select id="livro">
+                <option value="opcoes">Escolha uma das opções abaixo:</option>
+                <option class="disponivel" value="Romeu e Julieta">Romeu e Julieta</option>
+                <option class="indisponivel" value="pijama" disabled>O Menino do Pijama Listrado(Indisponível)</option>
+                <option class="disponivel" value="A culpa é das Estrelas">A culpa é das Estrelas</option>
+                <option class="indisponivel" value="hp" disabled>Harry Potter e a Pedra Filosofal(Indisponível)</option>
+                <option class="disponivel" value="Minha Vida Fora de Série">Minha Vida Fora de Série</option>
+                <option class="disponivel" value="Rainha Vermelha">Rainha Vermelha</option>
+                <option class="disponivel" value="A Cabana">A Cabana</option>
+                <option class="indisponivel" value="pequeno-principe" disabled>O Pequeno Principe(Indisponível)</option>
+                <option class="indisponivel" value="menino" disabled>O Menino Maluquinho(Indisponível)</option>
+                <option class="disponivel" value="Diário de um Banana">Diário de um Banana</option>
+                <option class="disponivel" value="Alice no País das Maravilhas">Alice no País das Maravilhas</option>
+                <option class="disponivel" value="As Aventuras de Pinóquio">As Aventuras de Pinóquio</option>
+            </select>
+            
+            <label for="pessoa">Pessoa:</label>
+            <input type="text" id="pessoa">
+
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso">
+
+            <td>Horário de Retirada:</td>
+            <td><input type="time"
+             name="horario_retirada"></td>
+
+            <label for="data_emprestimo">Data de Empréstimo:</label>
+            <input type="date" id="data_emprestimo">
+            
+            <label for="data_devolucao">Data de Devolução:</label>
+            <input type="date" id="data_devolucao">
+           
+            <div id="caixa-botao">
+            
+            <button onclick="emprestarLivro()">Empréstimo</button>
+            <button onclick="excluirlivros()">Excluir</button>
+        </div>
+        
+        <div class="lista-emprestimos">
+            <h2>Empréstimos Atuais</h2>
+            <ul id="lista-emprestimos">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

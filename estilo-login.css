@@ -1,0 +1,55 @@
+/* CSS do login.html com o nome estilo-login.css */
+body{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: url(fundo.jpg);
+}
+#titulo{
+    position:absolute;
+    right:42%;
+    top: 20%;
+    font-size:xx-large;
+}
+#main-body{
+    position: absolute;
+    background-image:linear-gradient(rgb(255, 154, 154), rgb(177, 0, 0));
+    width:40%;
+    height: 60%;
+    left: 31%;
+    top: 19%;
+    align-self: center;
+    border-radius: 20%;
+}
+#confirm{
+    background-color:rgb(132, 113, 113);
+    position:absolute;
+    right: 43%;
+    top: 80%;
+    width: 16%;
+    border-radius:25%;
+    text-align: center;
+}
+#confirm:hover{
+    background-color: rgb(25, 186, 25);
+    width: 22%;
+    text-align: center;
+    left:38%;
+    color: rgb(224, 221, 221);
+}
+#user{
+    position:absolute;
+    right:30%;
+    top:50%;
+}
+#senha{
+    position:absolute;
+    right: 30%;
+    top:70%;
+}
+#user{
+    right:34%;
+    position: absolute;
+}
+#senha{
+    right: 34%;
+    position: absolute;
+}
